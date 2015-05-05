@@ -6,7 +6,8 @@ public class birdmovment : MonoBehaviour {
 	public Vector3 gravity;
 	public Vector3 flapVelocity;
 	public float maxSpeed= 5f;
-
+	public float forwardSpeed = 1f;
+	
 	bool didFlap= false;
 	// Use this for initialization
 	void Start () {
@@ -22,6 +23,7 @@ public class birdmovment : MonoBehaviour {
 	
 	// Do physics engine updates here
 	void FixedUpdate () {
+		velocity.x = forwardSpeed;
 		velocity+=gravity * Time.deltaTime;
 
 		if(didFlap== true)
@@ -29,14 +31,16 @@ public class birdmovment : MonoBehaviour {
 			didFlap = false;
 			velocity+=flapVelocity;
 		}
-		velocity = Vector3.ClampMagnitude(velocity,maxSpeed);
-		transform.position+= velocity * Time.deltaTime;
-		float angle = 0;
-		if(velocity.y<0)
-		{
-		 angle = Mathf.Lerp(0,-90,velocity.y/maxSpeed);
-		}
-		transform.rotation = Quaternion.Euler(0,0,angle);
+//		velocity = Vector3.ClampMagnitude(velocity, maxSpeed);
 
+		transform.position+= velocity * Time.deltaTime;
+
+//		float angle = 0;
+//		if(velocity.y < 0)
+//		{
+//			angle = Mathf.Lerp(0, -90, -velocity.y / maxSpeed);
+//		}
+//	
+//		transform.rotation = Quaternion.Euler(0, 0, angle);
 	}
 }
