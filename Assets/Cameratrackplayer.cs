@@ -27,12 +27,6 @@ public class Cameratrackplayer : MonoBehaviour {
 			Vector3 pos = transform.position;
 			pos.x = player.position.x + offsetX;
 			transform.position= pos;
-
 		}
-
-
-
-
-	
 	}
 }
