@@ -9,7 +9,7 @@ public class Bglooper : MonoBehaviour {
 		Debug.Log("Triggered :" + collider.name);
 		float widthofBGObject = ((BoxCollider2D)collider).size.x;
 		Vector3 pos = collider.transform.position;
-//		pos.x += widthofBGObject * numBGPanels - widthofBGObject/2f;
+		pos.x += widthofBGObject * numBGPanels - widthofBGObject/2f;
 		collider.transform.position = pos;
 	}
 
