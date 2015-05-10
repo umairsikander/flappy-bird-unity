@@ -49,6 +49,7 @@
      <Compile Include="Assets\Bglooper.cs" />
      <Compile Include="Assets\Cameratrackplayer.cs" />
      <Compile Include="Assets\birdmovment.cs" />
+     <Compile Include="Assets\groundmover.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

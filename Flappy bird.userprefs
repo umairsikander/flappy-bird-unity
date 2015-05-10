@@ -2,9 +2,10 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Bglooper.cs">
     <Files>
-      <File FileName="Assets\Bglooper.cs" Line="16" Column="2" />
-      <File FileName="Assets\Cameratrackplayer.cs" Line="4" Column="31" />
-      <File FileName="Assets\birdmovment.cs" Line="11" Column="22" />
+      <File FileName="Assets\groundmover.cs" Line="8" Column="36" />
+      <File FileName="Assets\birdmovment.cs" Line="25" Column="22" />
+      <File FileName="Assets\Cameratrackplayer.cs" Line="31" Column="1" />
+      <File FileName="Assets\Bglooper.cs" Line="16" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -10,14 +10,12 @@ public class Cameratrackplayer : MonoBehaviour {
 	void Start () {
 
 		GameObject player_go = GameObject.FindGameObjectWithTag("Player");
-
 		if(player_go == null)
 		{
 			Debug.LogError("Could'nt find the object with tag 'Player'!");
 			return;
 		}
 		player = player_go.transform;
-
 	}
 	
 	// Update is called once per frame
